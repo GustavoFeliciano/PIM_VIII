@@ -6,6 +6,7 @@ import io.ktor.http.content.forEachPart
 import io.ktor.http.content.streamProvider
 import io.ktor.server.application.Application
 import io.ktor.server.request.receiveMultipart
+import io.ktor.server.response.respond
 import io.ktor.server.routing.post
 import io.ktor.server.routing.route
 import io.ktor.server.routing.routing
@@ -14,8 +15,8 @@ import kotlin.random.Random
 
 fun Application.uploadRoutes(){
     routing{
-        route("/auth"){
-            post("/upload") {
+        route("/upload"){
+            post {
                 val multipart = call.receiveMultipart()
 
                 var videoFile: File? = null

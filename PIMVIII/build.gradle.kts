@@ -18,6 +18,7 @@ dependencies {
 
     // Exposed + PostgreSQL
     implementation("org.jetbrains.exposed:exposed-dao:0.43.0")
+    implementation(libs.ktor.server.cors)
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.serialization.kotlinx.json)

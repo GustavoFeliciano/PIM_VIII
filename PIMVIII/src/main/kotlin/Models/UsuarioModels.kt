@@ -10,7 +10,7 @@ data class UsuarioModel(
 )
 
 @Serializable
-data class Login(
+data class loginRequest(
     val email: String,
     val senha: String
 )
