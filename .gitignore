@@ -12,6 +12,10 @@
 /.next/
 /out/
 
+#Docker
+DockerVolumes/
+pgdata/
+
 # production
 /build
 

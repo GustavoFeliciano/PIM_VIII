@@ -10,4 +10,5 @@ services:
     ports:
       - "5430:5432"
     volumes:
-      - ./pgdata:/var/lib/postgresql/data
+      - /home/gwdcks/Faculdade/PIM\ VIII/DockerImages/DockerVolumes/pgdata:/var/lib/postgresql/data
+

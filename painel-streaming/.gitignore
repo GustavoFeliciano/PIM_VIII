@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+#Docker
+pgdata/
+
 # production
 /build
 
